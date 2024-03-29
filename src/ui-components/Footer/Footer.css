@@ -1,0 +1,40 @@
+footer{
+    padding: 40px 0px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fr-text{
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 10px;
+}
+.footer-field > input::placeholder{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.footer-field{
+    border-bottom-color: rgba(0, 0, 0, 0.444);
+}
+
+footer > section{
+    width: 100%;
+}
+
+footer > section, .info, .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer > section > p{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.644);
+}
+footer > section > p > span{
+    font-weight:500;
+    color: black;
+}

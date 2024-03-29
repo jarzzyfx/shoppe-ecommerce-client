@@ -1,0 +1,22 @@
+.toast{
+    width: 100%;
+    padding:2px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+    background: #EFEFEF;
+    border-top: 2px solid #A18A68;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toast > div{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 10px;
+}
+.toast > div:first-child{
+    cursor: default;
+}

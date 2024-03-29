@@ -1,0 +1,68 @@
+.auth {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.auth > main > header{
+    background: #cfcbcbc9;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+}
+.auth > main {
+    width: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.auth > main > div{
+    display: flex;
+    width: 700px;
+    transition: .2s linear;
+}
+.slide-login{
+  transform: translateX(-50%);
+}
+
+.slider-button{
+    color: black;
+    height:30px;
+    width: 160px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.slider{
+  height:30px;
+    width: 160px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(17, 3, 3, 0.13);
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    transition:.2s linear;
+    cursor: pointer;
+    z-index: -1;
+}
+.slider.move{
+  transform: translate(0%, -50%);
+}

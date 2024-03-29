@@ -1,0 +1,51 @@
+.filter{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+}
+
+
+
+.slider-info{
+    width: 100%;
+    margin-top: 10px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-info > h4{
+    color: #707070;
+    font-size: 14px;
+    font-weight: 100;
+}
+.slider-info > h3{
+    color: #A18A68;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.rc-slider-rail{
+    background: #D9D9D9;
+}
+
+.rc-slider-handle{
+    background: black ;
+    border: none;
+    border-radius:0 ;
+    width: 3px;
+    height: 17px;
+}
+.rc-slider-handle:hover,
+.rc-slider-handle-dragging{
+    box-shadow: none !important;
+    border-color: none !important;
+    cursor: pointer !important;
+    transform: scale(1.2);
+}
+
+.rc-slider-track{
+    background: black;
+}

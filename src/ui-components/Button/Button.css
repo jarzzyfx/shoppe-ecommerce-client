@@ -1,0 +1,59 @@
+.btn{
+    padding: 8px 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.btn:active{
+    transform: scale(0.85);
+}
+
+.gw{
+    border: 1px solid #FBFBFB;
+    color: #FBFBFB;
+    font-weight: 500;
+}
+
+.gb{
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 500;
+}
+
+.fb{
+    background-color: black;
+    color: white;
+}
+
+.ft{
+    background: #EFEFEF;
+}
+
+.fwh{
+    background-color: white;
+    color: black;
+}
+
+.g{
+    color: #A18A68;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.smb{
+    border-radius: 5px;
+}
+.bcb{
+    border-radius: 7px;
+}
+
+
+.fwt{
+    width: 100%;
+}
+.setw{
+    width: 20rem;
+}

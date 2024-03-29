@@ -1,0 +1,48 @@
+.shop-field{
+    width: 100%;
+    height: 60px;
+}
+.shop-field > select{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shop-field > select > option{
+    margin: 10px 0px;
+    padding: 10px;
+}
+.shop{
+    margin-top: 50px;
+}
+.shop > h1 {
+    margin-bottom: 30px;
+}
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-shop{
+    width: 263px;
+}
+.shop-container{
+    display: flex;
+    flex-basis: 1/2;
+    gap: 40px;
+}
+.shop-container > section:not(.products){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+.shop-container > section:not(.products) > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

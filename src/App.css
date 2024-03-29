@@ -1,0 +1,25 @@
+body{
+  background: white;
+  width: 100%;
+  position: relative;
+  padding: 10px 100px;
+}
+@media (max-width: 500px) {
+  body{
+    padding: 5px 20px
+  }
+}
+a{
+  text-decoration: none;
+}
+button{
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.gold{
+  fill: #A18A68 ;
+  color: #A18A68 ;
+}
+/* #A18A68 */

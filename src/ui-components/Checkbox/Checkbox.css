@@ -1,0 +1,19 @@
+.cb{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.cb > input{
+    accent-color: #A18A68;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.cb > h3{
+    font-size: 12px;
+    text-transform: capitalize;
+}

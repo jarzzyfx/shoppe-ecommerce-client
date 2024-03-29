@@ -1,0 +1,64 @@
+.inp-cont{
+    width:200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.inp-cont > span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, 70%);
+    width: 20px;
+    height: 20px;
+}
+
+.inp{
+    
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.inp.line{
+   border-radius: 0;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+.inp-btn{
+    padding: 0;
+    color: rgba(0, 0, 0, 0.644);
+}
+.inp.inpBold{
+    border: 2px solid rgba(0, 0, 0, 0.644);
+}
+
+.label{
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    font-size: 14px;
+    transform: translate(10%, 100%);
+    transition: .2s ease-in;
+}
+
+.inp:focus{
+    color: #A18A68;
+    font-weight: 500;
+}
+
+.inp-cont .inp:valid ~ .label,
+.inp-cont .inp:focus ~ .label{
+    transform: translateY(-16px);
+    font-size: 10px;
+}

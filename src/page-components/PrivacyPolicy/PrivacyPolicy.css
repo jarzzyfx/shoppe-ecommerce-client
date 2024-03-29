@@ -1,0 +1,30 @@
+.privacyPolicy{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 0;
+}
+html{
+    color: rgba(0, 0, 0, 0.842);
+}
+.privacyPolicy > h1{
+    font-size: 30px;
+}
+.privacyPolicy > article, .policy > p, .policy > ul, .policy > li{
+    font-size: 12px;
+    line-height: 25px;
+    width: 500px;
+    font-weight: 600;
+}
+
+.policy > h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.policy > ul{
+    margin-left: 20px;
+}

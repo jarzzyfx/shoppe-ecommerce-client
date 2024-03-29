@@ -1,0 +1,36 @@
+.reg{
+    width: 350px;
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reg > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.reg > section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reg > section > a{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+.reg-inp{
+    width: 100%;
+    border-color: gray;
+}
+
+.reg-btn{
+    font-size: 12px;
+    border-radius: 4px;
+}

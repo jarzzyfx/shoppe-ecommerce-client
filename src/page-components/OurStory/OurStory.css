@@ -1,0 +1,54 @@
+
+
+.ourStory{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 30px;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ourStory, .story{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.ourStory > article,.story{
+    width: 550px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.833);
+    font-size: 12px;
+    font-weight:600;
+}
+
+.ourStory > h1{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.833);
+}
+.ourStory > h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.833);
+}
+
+.story{
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.story > h2{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.833);   
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.story > img{
+    margin-bottom: 20px;
+}
+
+.story > p {
+    line-height: 25px;
+    
+}

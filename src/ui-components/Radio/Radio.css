@@ -1,0 +1,30 @@
+.radio{
+    width: 32px;
+    height: 16;
+    background: #707070;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.radio.active{
+    background: #0fd641;
+}
+
+.ball{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 22%);
+    transition: .2s linear;
+}
+
+.ball.roll{
+    transform: translate(150%, 22%);
+}

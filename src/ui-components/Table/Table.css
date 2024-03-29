@@ -1,0 +1,29 @@
+table{
+    width: 100%;
+    min-width: 1245px;
+    padding: 10px 0;
+}
+
+tr:hover {background-color: #4e42181e;}
+th{
+    text-align: left;
+    padding: 10px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+td {
+    height: 50px;
+    border-bottom: 1px solid #D8D8D8 !important;
+    color: #707070;
+    font-size: 16x;
+}
+th {
+    height: 50px;
+    border-bottom: 1px solid #000 !important;
+}
+
+.link{
+    color: #A18A68;
+    font-size: 16x;
+}
