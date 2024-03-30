@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 import { useState } from 'react';
 import CartCard from '../CartCard/CartCard';
 
-const Cart = () => {
+const Cart = ({cartText}) => {
 
     const [cart,setCart] = useState(false)
 
@@ -17,7 +17,7 @@ const Cart = () => {
 
   return (
     <div className='cart'>
-        <Button funcClick={addCart} className={'cart-btn'} btnType={'ghost'}><AiOutlineShoppingCart/> <span>View Your Cart</span></Button>
+        <Button funcClick={addCart} className={'cart-btn'} btnType={'ghost'}><AiOutlineShoppingCart/> <span>{cartText && cartText}</span></Button>
 
         <div className={`cart-wrapper ${!cart ? 'hideCart' : '' }`}>
             <div className="cart-viewer">

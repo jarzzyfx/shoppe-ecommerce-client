@@ -4,6 +4,7 @@ import LinkSlider from '../../ui-components/LinkSlider/LinkSlider'
 import BlogCard from '../../ui-components/BlogCard/BlogCard'
 import Button from '../../ui-components/Button/Button'
 import { FaAngleRight } from "react-icons/fa6";
+import { useEffect, useState } from 'react'
 
 const Blog = () => {
 
@@ -28,12 +29,35 @@ const BlogLinks=[
 
 const demodesc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates rem provident iure at accusantium sequi eum quae est, ut odit reiciendis quidem a recusandae aliquam assumenda ratione tenetur eius. Repellat tenetur cupiditate nobis autem ipsa optio esse voluptates voluptatibus blanditiis neque veritatis repellendus sed adipisci fugit nesciunt necessitatibus unde magnam sint impedit aspernatur accusantium libero, et a modi! Commodi temporibus, ducimus officiis facere fugit eum reiciendis enim nostrum rem, rerum architecto doloribus ipsam placeat eaque animi. Commodi reprehenderit repellat iure, ut laudantium perspiciatis earum totam quae quasi adipisci corrupti laborum, ab mollitia labore distinctio nisi atque optio doloribus eos.'
 
+
+const [windowDimension, detectHW] = useState({
+  winWidth: window.innerWidth,
+  winHeight: window.innerHeight,
+});
+
+const detectSize = () => {
+  detectHW({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+};
+
+useEffect(() => {
+  window.addEventListener("resize", detectSize);
+  return () => {
+    window.removeEventListener("resize", detectSize);
+  };
+}, [windowDimension]);
+
+
   return (
     <div className="blog">
       <h1>Blog</h1>
       <main className="blog-body">
         <section className="blog-panel-left">
-          <Search exposed={true}/>
+          {
+            windowDimension.winWidth <= 500 ? "" : (<Search exposed={true}/>)
+          }
           <div className="blog-links">
             <h4>Categories</h4>
           <LinkSlider linkFormat={'column'} slider={false} links={BlogLinks}/>
@@ -42,6 +66,7 @@ const demodesc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possi
         <section className="blog-panel-right">
          <div className='blog-items'>
          <BlogCard
+         className={'bg-cd'}
           TopicTitle={'Top trends from spring'}
           blogLink={'#'}
           category={'fashion'}
@@ -50,6 +75,7 @@ const demodesc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possi
           img={'/images/product-with-care.png'}
           />
           <BlogCard
+          className={'bg-cd'}
           TopicTitle={'Top trends from spring'}
           blogLink={'#'}
           category={'fashion'}
@@ -58,6 +84,7 @@ const demodesc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possi
           img={'/images/womanFace-front.png'}
           />
           <BlogCard
+          className={'bg-cd'}
           TopicTitle={'Top trends from spring'}
           blogLink={'#'}
           category={'fashion'}
@@ -66,6 +93,7 @@ const demodesc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possi
           img={'/images/womanFace-side.png'}
           />
           <BlogCard
+          className={'bg-cd'}
           TopicTitle={'Top trends from spring'}
           blogLink={'#'}
           category={'fashion'}

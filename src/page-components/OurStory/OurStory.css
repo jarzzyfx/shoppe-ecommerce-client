@@ -52,3 +52,12 @@
     line-height: 25px;
     
 }
+
+@media (max-width: 500px) {
+    .story > img{
+        width: 100%;
+    }
+    .ourStory > article,.story{
+        width: 100%;
+    }
+}

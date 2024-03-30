@@ -46,3 +46,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 500px) {
+    .shop-container{
+        flex-direction: column;
+    }
+    .products{
+        align-items: center;
+        justify-content: center;
+    }
+    .filter-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .shopselects{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #fff;
+    }
+    .filter-search > header , .filter-search > header, input{
+        width: 100%;
+    }
+}
