@@ -38,3 +38,26 @@ footer > section > p > span{
     font-weight:500;
     color: black;
 }
+
+@media (max-width: 500px) {
+    .top, .bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 12px;
+
+    }
+    .info{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+    .fr-text{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .bottom > p{
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

@@ -56,3 +56,12 @@
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 500px) {
+    .blog-body{
+        flex-direction: column-reverse;
+    }
+    .bg-cd{
+        width: 100%;
+    }
+}

@@ -93,7 +93,7 @@ transform: translateY(25%);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
   }
   .product-showcase > header > h1{
@@ -104,4 +104,25 @@ transform: translateY(25%);
   .product-showcase > header:last-child{
     font-size: 20px;
     font-weight: 600;
+  }
+
+  @media (max-width: 500px){
+    .hero-section{
+        height: 80vh;
+    }
+    .img-container{
+        height: 70vh;
+        width: 100%;
+     }
+     
+     .img-container > img{
+         width: 100%;
+         height: 100%;
+     object-fit: cover;
+     }
+     .product-showcase > main{
+        align-items: center;
+        justify-content: center;
+     }
+     
   }

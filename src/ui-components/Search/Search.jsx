@@ -5,7 +5,7 @@ import './Search.css'
 import { IoIosSearch } from "react-icons/io";
 import { VscCollapseAll } from "react-icons/vsc";
 
-const Search = ({exposed}) => {
+const Search = ({exposed, className}) => {
 
     const [search, setSearch] = useState(false)
     const [searching, setSearching] = useState(false)
@@ -44,7 +44,7 @@ const Search = ({exposed}) => {
     <>
         {
             exposed ? (
-                <div className="search-exposed">
+                <div className={`search-exposed ${className}`}>
         <header>
         <input type="search"   onChange={handleSearch} name="" id="" placeholder='Search...'/>
         
@@ -60,7 +60,7 @@ const Search = ({exposed}) => {
 
     </div>
             ) : (
-                <div className='search-expose' >
+                <div className={`search-expose ${className}`} >
                     <button onClick={openSearch}><IoIosSearch /></button>
     {
         search && (

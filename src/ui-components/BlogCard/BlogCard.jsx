@@ -1,9 +1,9 @@
 import  Button from '../Button/Button'
 import "./BlogCard.css";
 
-const BlogCard = ({ blogLink, img, category, datePublished, TopicTitle, description }) => {
+const BlogCard = ({ className ,blogLink, img, category, datePublished, TopicTitle, description }) => {
   return (
-      <div className="BlogCard">
+      <div className={`BlogCard ${className}`}>
         <div className="blog-img-section">
             <img src={img ? img : 'loading...'} alt={`${TopicTitle}-img`} />
         </div>
