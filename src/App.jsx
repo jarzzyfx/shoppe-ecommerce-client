@@ -16,6 +16,7 @@ import PrivacyPolicy from './page-components/PrivacyPolicy/PrivacyPolicy'
 import RetrievePassword from './page-components/RetrievePassword/RetrievePassword'
 import Login from './page-components/Auth/Login/Login'
 import Register from './page-components/Auth/Register/Register'
+import Help from './page-components/Help/Help'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage/>}/>
           <Route path='/shop' element={<Shop/>} />
+          <Route path='/help' element={<Help/>} />
           <Route path='/shop/:productId' element={<Product/>} />
           <Route path='/about-us' element={<OurStory/>} />
           <Route path='/blog' element={<Blog/>} />

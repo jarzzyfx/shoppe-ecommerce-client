@@ -20,8 +20,9 @@
 }
 
 .contact > form > div{
-    width: 800px;
-    height: 300px;
+    
+    max-width: 800px;
+    min-height: 300px;
     display: flex;
     margin-top: 30px;
     justify-content: center;
@@ -49,4 +50,18 @@
     width: 300px;
     border-radius: 5px;
     font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    .contact > form, .contactInp{
+        width: 100%;
+    }
+    .contact > form > div{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90%;
+    }
+    .contact-btn{
+        margin-top: 20px;
+    }
 }

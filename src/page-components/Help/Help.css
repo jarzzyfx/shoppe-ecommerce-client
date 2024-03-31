@@ -1,0 +1,31 @@
+*:not(h1){
+    
+    font-size: 18px;
+    font-weight: 100px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.help, .help-bars{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+.help-bar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddddddaf;
+}
+.help-bar:hover, .help-bar:active{
+    background: #e7e3e321;
+}
+.help-bar > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+}
