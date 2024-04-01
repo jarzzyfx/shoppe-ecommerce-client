@@ -14,7 +14,7 @@ const LinkSlider = ({ links,func, className, slider,linkFormat }) => {
   const handleClick = (index) => {
     setActiveLink(index);
     handleActiveLinkStyle(index);
-    func()
+    func
   };
 
 
