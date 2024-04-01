@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './LinkSlider.css';
 import { Link } from 'react-router-dom';
 
-const LinkSlider = ({ links, className, slider,linkFormat }) => {
+const LinkSlider = ({ links,func, className, slider,linkFormat }) => {
   const [activeLink, setActiveLink] = useState(0);
   const [underlineStyle, setUnderlineStyle] = useState({});
 
@@ -14,6 +14,7 @@ const LinkSlider = ({ links, className, slider,linkFormat }) => {
   const handleClick = (index) => {
     setActiveLink(index);
     handleActiveLinkStyle(index);
+    func()
   };
 
 
