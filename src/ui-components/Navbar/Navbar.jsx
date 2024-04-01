@@ -38,6 +38,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     !menuopen ? setMenuopen(true) : setMenuopen(false);
+    console.log(menuopen)
   };
 
 
@@ -77,6 +78,7 @@ const Navbar = () => {
                 className={"nav-btn phone"}
                 btnLink={"/auth/login"}
                 btnType={"ghost"}
+                funcClick={toggleMenu}
               >
                 <CiUser /> <span>My Account</span>
               </Button>
@@ -84,6 +86,7 @@ const Navbar = () => {
                 className={"nav-btn phone"}
                 btnLink={"/auth/login"}
                 btnType={"ghost"}
+                funcClick={toggleMenu}
               >
                 <IoIosLogOut /> <span>Logout</span>
               </Button>
@@ -99,7 +102,7 @@ const Navbar = () => {
           </section>
 
           <section className={`nav_links ${menuopen ? "open" : ""} `}>
-            <LinkSlider slider={true} links={laptopnavLinks} className={"separate"} />
+            <LinkSlider slider={true} links={laptopnavLinks} className={"separate"} func={toggleMenu} />
             <div className="action-buttons">
               <Button
                 funcClick={toggleMenu}

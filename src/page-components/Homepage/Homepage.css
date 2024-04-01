@@ -108,11 +108,14 @@ transform: translateY(25%);
 
   @media (max-width: 500px){
     .hero-section{
-        height: 80vh;
+        min-height: 80vh;
     }
     .img-container{
         height: 70vh;
         width: 100%;
+     }
+     .hero-controls{
+        transform: translateY(-5%);
      }
      
      .img-container > img{
