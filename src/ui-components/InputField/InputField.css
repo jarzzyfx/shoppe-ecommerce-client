@@ -42,13 +42,14 @@
 .label{
     font-size: 10px;
     font-weight: 500;
+    width: 50%;
     text-transform: capitalize;
     position: absolute;
     top: 0;
     left: 0;
     background: #fff;
     font-size: 14px;
-    transform: translate(10%, 100%);
+    transform: translate(0%, 100%);
     transition: .2s ease-in;
 }
 
