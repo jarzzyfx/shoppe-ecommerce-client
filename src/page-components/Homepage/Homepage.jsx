@@ -4,6 +4,7 @@ import ProductCard from '../../ui-components/ProductCard/ProductCard'
 import { IoIosRadioButtonOff } from "react-icons/io";
 import { FaCircle } from "react-icons/fa";
 import { demoProductData } from '../../demoData/demoProductData';
+import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom's
 
 
@@ -15,9 +16,15 @@ const Homepage =() => {
 //     navigate(link)
 // }
 
+const [active, setActive] = useState()
+
+const changeSlide = () => {
+
+    console.log('hi')
+}
+
 
   const data =  demoProductData
-  console.log(data)
 
   document.querySelector('title').textContent = 'Shoppe - Home'
 
@@ -32,11 +39,12 @@ const Homepage =() => {
         <Button className={'hero-btn'} btnType={'ghostWhite'} setBorder={'smooth'}>view product</Button>
         </div>
         <div className="hero-controls">
-        <IoIosRadioButtonOff className='white expand'/>
-        <FaCircle className='white'/>
-        <FaCircle className='white' />
-        <FaCircle  className='white'/>
-        <FaCircle  className='white'/>
+          <Button btnType={'ghost'} funcClick={changeSlide} className={'home-btn'}> <IoIosRadioButtonOff className='white expand'/></Button>
+          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
+          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
+          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
+          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
+
         </div>
       </div>
 

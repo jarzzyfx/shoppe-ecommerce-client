@@ -11,12 +11,32 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Product = () => {
   const param = useParams().productId;
   const [skuNumber, setSkuNumber] = useState(1)
 
+
+  // window size emitter
+  const [windowDimension, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimension]);
 
  
 
@@ -62,7 +82,9 @@ const Product = () => {
       <section className="top-area">
         {/* img section */}
         <div className="img_section">
-          <div className="img_previews">
+          {
+            windowDimension.winWidth > 600 && (
+              <div className="img_previews">
             <Link className="img_link" to={"#"}>
               <img src={product.demoPictures.img1} alt={product.productTitle} />
             </Link>
@@ -77,6 +99,8 @@ const Product = () => {
               <img src={product.demoPictures.img4} alt={product.productTitle} />
             </Link>
           </div>
+            )
+          }
           <div className="img_showcase">
             <img src={product.productImg} alt={product.productTitle} />
             <div className="showcase_tracker">
