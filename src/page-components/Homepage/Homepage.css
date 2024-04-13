@@ -16,6 +16,14 @@
     z-index: 2;
 }
 
+.home-btn{
+    padding: 0;
+    color: black;
+    margin: 0;
+    min-width: 0;
+    cursor: pointer;
+}
+
 .img-container > img{
     width: 100%;
     height: 100%;
@@ -28,7 +36,8 @@
     height: 70%;
     top: 0;
     left: 0;
-    transform: translate(10%, 50%);
+    padding-left: 10%;
+    transform: translate(0%, 50%);
     z-index: 2;
 }
 
@@ -74,7 +83,7 @@ transform: translateY(25%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 6px;
+    gap: 2px;
     transform: translateY(-8%);
 }
 .gold{
@@ -127,5 +136,6 @@ transform: translateY(25%);
         align-items: center;
         justify-content: center;
      }
+     
      
   }
