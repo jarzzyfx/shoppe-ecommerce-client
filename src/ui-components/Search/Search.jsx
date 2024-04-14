@@ -46,7 +46,7 @@ const Search = ({exposed, className}) => {
             exposed ? (
                 <div className={`search-exposed ${className}`}>
         <header>
-        <input type="search"   onChange={handleSearch} name="" id="" placeholder='Search...'/>
+        <input type="search" spellCheck={true}  onChange={handleSearch} name="" id="" placeholder='Search...'/>
         
         <button><IoIosSearch /></button>
         </header>
@@ -66,7 +66,7 @@ const Search = ({exposed, className}) => {
         search && (
         <div className="search-wrapper">
             <header>
-            <input type="search" name=""   onChange={handleSearch} id="" placeholder='Search...'/>
+            <input type="search" name="" spellCheck={true}   onChange={handleSearch} id="" placeholder='Search...'/>
     <button onClick={closeSearch}><VscCollapseAll /></button>
             </header>
             {searching ? (<small className='searching'>{result ? `Searching ... ` : 'No Results Found'}</small>) : ''}

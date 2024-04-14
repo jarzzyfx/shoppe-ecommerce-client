@@ -16,6 +16,11 @@ import { useEffect, useState } from "react";
 const Product = () => {
   const param = useParams().productId;
   const [skuNumber, setSkuNumber] = useState(1)
+  const [index, setIndex] = useState(0)
+  const data = demoProductData
+
+
+  
 
 
   // window size emitter
@@ -76,6 +81,11 @@ const Product = () => {
     newSku >= product.sku && setSku(product.sku) 
    }
    const [sku, setSku] = useState(product.sku)
+
+
+   function setImageToShowcase (index) {
+    setIndex(index)
+   }
  
   return (
     <div className="product">
@@ -85,24 +95,21 @@ const Product = () => {
           {
             windowDimension.winWidth > 600 && (
               <div className="img_previews">
-            <Link className="img_link" to={"#"}>
-              <img src={product.demoPictures.img1} alt={product.productTitle} />
+            {
+              product.demoPictures.map((pic, picIndex) => {
+                console.log(picIndex)
+                return (
+                  <Link key={picIndex} className="img_link" to={"#"} onClick={() => setImageToShowcase(picIndex)}>
+              <img src={pic.imgurl} alt={pic.alt} />
             </Link>
-
-            <Link className="img_link" to={"#"}>
-              <img src={product.demoPictures.img2} alt={product.productTitle} />
-            </Link>
-            <Link className="img_link" to={"#"}>
-              <img src={product.demoPictures.img3} alt={product.productTitle} />
-            </Link>
-            <Link className="img_link" to={"#"}>
-              <img src={product.demoPictures.img4} alt={product.productTitle} />
-            </Link>
+                )
+              })
+            }
           </div>
             )
           }
           <div className="img_showcase">
-            <img src={product.productImg} alt={product.productTitle} />
+            <img className="image_showcase" src={product.demoPictures[index].imgurl} alt={product.demoPictures[index].alt} />
             <div className="showcase_tracker">
               <span></span>
             </div>

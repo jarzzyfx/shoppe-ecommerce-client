@@ -3,12 +3,12 @@ export const demoProductData = [
         "productId": "43748591dhfh--2",
         "productTitle": "Lira Earrings",
         "productImg": "/images/ear1.png",
-        "demoPictures":{
-            "img1": "/images/ear1.png",
-            "img2": "/images/ear1.png",
-            "img3": "/images/ear1.png",
-            "img4": "/images/ear1.png",
-        },
+        "demoPictures":[
+            {imgurl:"/images/ear1.png", alt: ""},
+            {imgurl:"/images/ear1.png", alt: ""},
+            {imgurl:"/images/ear1.png", alt: ""},
+            {imgurl:"/images/ear1.png", alt: ""},
+        ],
         "productDescription":"           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem itaque mollitia autem? Saepe asperiores ipsa cum doloremque, temporibus reprehenderit perspiciatis odit atque aliquam quis dicta possimus cupiditate magnam recusandae eveniet quidem. ",
         "message": {
             "type": true,
@@ -35,12 +35,13 @@ export const demoProductData = [
         "productId": "458584hf74h3--2",
         "productTitle": "Hal Earrings",
         "productImg": "/images/ear2.png",
-        "demoPictures":{
-            "img1": "/images/ear2.png",
-            "img2": "/images/ear2.png",
-            "img3": "/images/ear2.png",
-            "img4": "/images/ear2.png",
-        },
+        "demoPictures":[
+            {imgurl:"/images/ear2.png", alt: ""},
+            {imgurl:"/images/ear2.png", alt: ""},
+            {imgurl:"/images/ear2.png", alt: ""},
+            {imgurl:"/images/ear2.png", alt: ""},
+        ]
+        ,
         "productDescription":"           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem itaque mollitia autem? Saepe asperiores ipsa cum doloremque, temporibus reprehenderit perspiciatis odit atque aliquam quis dicta possimus cupiditate magnam recusandae eveniet quidem.",
         "message": {
             "type": false,
@@ -67,12 +68,12 @@ export const demoProductData = [
         "productId": "37474njdhibnx--2",
         "productTitle": "Kaede Hair Pin Set Of 3 ",
         "productImg": "/images/ear3.png",
-        "demoPictures":{
-            "img1": "/images/ear3.png",
-            "img2": "/images/ear3.png",
-            "img3": "/images/ear3.png",
-            "img4": "/images/ear3.png",
-        },
+        "demoPictures":[
+            {imgurl: "/images/ear3.png", alt: ""},
+            {imgurl: "/images/ear3.png", alt: ""},
+            {imgurl: "/images/ear3.png", alt: ""},
+            {imgurl: "/images/ear3.png", alt: ""},
+        ],
         "productDescription":"            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem itaque mollitia autem? Saepe asperiores ipsa cum doloremque, temporibus reprehenderit perspiciatis odit atque aliquam quis dicta possimus cupiditate magnam recusandae eveniet quidem.",
         "message": {
             "type": false,
@@ -98,12 +99,12 @@ export const demoProductData = [
         "productId": "4348cnfddfndi2--2",
         "productTitle": "Hair Pin Set of 3",
         "productImg": "/images/ear4.png",
-        "demoPictures":{
-            "img1": "/images/ear4.png",
-            "img2": "/images/ear4.png",
-            "img3": "/images/ear4.png",
-            "img4": "/images/ear4.png",
-        },
+        "demoPictures":[
+            {imgurl: "/images/ear4.png", alt:""},
+            {imgurl: "/images/ear4.png", alt:""},
+            {imgurl: "/images/ear4.png", alt:""},
+            {imgurl: "/images/ear4.png", alt:""},
+        ],
         "productDescription":"           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem itaque mollitia autem? Saepe asperiores ipsa cum doloremque, temporibus reprehenderit perspiciatis odit atque aliquam quis dicta possimus cupiditate magnam recusandae eveniet quidem.",
         "message": {
             "type": false,
@@ -129,12 +130,12 @@ export const demoProductData = [
         "productId": "dshdns383993dh--2",
         "productTitle": "Plaine Necklace",
         "productImg": "/images/ear5.png",
-        "demoPictures":{
-            "img1": "/images/ear5.png",
-            "img2": "/images/ear5.png",
-            "img3": "/images/ear5.png",
-            "img4": "/images/ear5.png",
-        },
+        "demoPictures":[
+            {imgurl:"/images/ear5.png", alt: ""},
+            {imgurl:"/images/ear5.png", alt: ""},
+            {imgurl:"/images/ear5.png", alt: ""},
+            {imgurl:"/images/ear5.png", alt: ""},
+        ],
         "productDescription":"           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem itaque mollitia autem? Saepe asperiores ipsa cum doloremque, temporibus reprehenderit perspiciatis odit atque aliquam quis dicta possimus cupiditate magnam recusandae eveniet quidem.",
         "message": {
             "type": true,
@@ -160,12 +161,12 @@ export const demoProductData = [
         "productId": "374849033nccss--2",
         "productTitle": "Yuki Hair Pin Set of 3",
         "productImg": "/images/ear6.png",
-        "demoPictures":{
-            "img1": "/images/ear6.png",
-            "img2": "/images/ear6.png",
-            "img3": "/images/ear6.png",
-            "img4": "/images/ear6.png",
-        },
+        "demoPictures":[
+            {imgurl: "/images/ear6.png", alt: ""},
+            {imgurl: "/images/ear6.png", alt: ""},
+            {imgurl: "/images/ear6.png", alt: ""},
+            {imgurl: "/images/ear6.png", alt: ""},
+        ],
         "productDescription":"           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quidem itaque mollitia autem? Saepe asperiores ipsa cum doloremque, temporibus reprehenderit perspiciatis odit atque aliquam quis dicta possimus cupiditate magnam recusandae eveniet quidem.",
         "message": {
             "type": false,
