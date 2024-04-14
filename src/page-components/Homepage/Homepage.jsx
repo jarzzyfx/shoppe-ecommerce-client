@@ -16,34 +16,94 @@ const Homepage =() => {
 //     navigate(link)
 // }
 
-const [active, setActive] = useState()
+const [index, setIndex] = useState(0)
 
-const changeSlide = () => {
 
-    console.log('hi')
+const slideBtnStyles = {
+  padding: "0px 10px",
+  cursor: "pointer",
+  transition: ".2s ease"
 }
 
+const imagesArray = [
+  {
+    key: "_1",
+    imgUrl: "/images/heroImg.png",
+    imgTitle : "Gold Big Hoops",
+    imgTitlePrice: "68,000",
+    imgBtnText: "View Products"
+  },
+  {
+    key: "_2",
+    imgUrl: "/images/womanFace-front.png",
+    imgTitle : "High Gold Earings",
+    imgTitlePrice: "20,000",
+    imgBtnText: "Get one now"
+  },
+  {
+    key: "_3",
+    imgUrl: "/images/womanFace-side.png",
+    imgTitle : "Diamonds Ear Gangs",
+    imgTitlePrice: "50,00",
+    imgBtnText: "Access Limitted Stock"
+  },
+  {
+    key: "_4",
+    imgUrl: "/images/heroImg.png",
+    imgTitle : "Gold Big Hoops",
+    imgTitlePrice: "72,000",
+    imgBtnText: "View Products"
+  },
+  {
+    key: "_5",
+    imgUrl: "/images/ear1.png",
+    imgTitle : "Gold metal Drops",
+    imgTitlePrice: "68,000",
+    imgBtnText: "View Products"
+  },
+]
 
+const slide = (index) => {
+  setIndex(index)
+}
+
+// const slider = (index) => {
+//   setInterval(() => {
+//     setIndex(imagesArray.length +1)
+//     if(index >= imagesArray.length ) { 
+//       setIndex(imagesArray.length -1)
+//     }
+//   }, 1000);
+// }
+
+// slider(index)
   const data =  demoProductData
 
   document.querySelector('title').textContent = 'Shoppe - Home'
 
   return (
     <main className='homePage'>
-      <div className="img-container">
-        <img src="/images/heroImg.png" alt="Hero Image" />
+      <div style={{backgroundImage: `url(${imagesArray[index].imgUrl})`}} className="img-container">
+        {/* <img src="/images/heroImg.png" alt="Hero Image" /> */}
 
       <div className="hero-section">
-        <h1>Gold Big Hoops</h1>
-        <h2>${'68,000'}</h2>
-        <Button className={'hero-btn'} btnType={'ghostWhite'} setBorder={'smooth'}>view product</Button>
+        <h1>{imagesArray[index].imgTitle}</h1>
+        <h2>${imagesArray[index].imgTitlePrice}</h2>
+        <Button className={'hero-btn'} btnType={'ghostWhite'} setBorder={'smooth'}>{imagesArray[index].imgBtnText}</Button>
         </div>
         <div className="hero-controls">
-          <Button btnType={'ghost'} funcClick={changeSlide} className={'home-btn'}> <IoIosRadioButtonOff className='white expand'/></Button>
-          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
-          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
-          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
-          <Button btnType={'ghost'} className={'home-btn'}> <FaCircle className='white'/></Button>
+          {
+            imagesArray.map((item, itemIndex) => {
+              return (
+                <div style={slideBtnStyles} key={itemIndex} onClick={()=> slide(itemIndex)}>
+
+                  {
+                    index === itemIndex ? (<IoIosRadioButtonOff className='white expand'/>) : (<FaCircle className='white'/>)
+                  }
+                </div>
+              )
+            })
+          }
 
         </div>
       </div>
